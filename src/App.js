@@ -19,7 +19,7 @@ function App() {
   return (
     <React.Fragment>
       <GoogleOAuthProvider clientId="127078917996-2m49dj34kmuact24c7klug9ihao2mj6c.apps.googleusercontent.com">
-        <BrowserRouter>
+        <BrowserRouter basename="/react-ecommerce">
           <Navbar sendData={receiveData} />
           <Routes>
             <Route path="/" element={<Home sendData={searchProduct} />} />
